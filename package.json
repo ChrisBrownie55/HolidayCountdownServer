@@ -1,0 +1,18 @@
+{
+  "name": "holiday-countdown-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "holiday-countdown-server.js",
+  "scripts": {
+    "start": "node holiday-countdown-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify static/index.js -o static/bundle.js"
+  },
+  "author": "Christopher Brown",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "holiday-countdown": "^1.0.1",
+    "path": "^0.12.7"
+  }
+}

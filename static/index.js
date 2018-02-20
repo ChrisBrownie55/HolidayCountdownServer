@@ -1,3 +1,4 @@
+'use strict'
 const hc = require('holiday-countdown')
 
 function createCard(title,subtitle,content) {
@@ -15,5 +16,5 @@ function createCard(title,subtitle,content) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    Object.keys(hc.holidays).forEach(key => createCard(key, hc.holidayDays[key], hc.holidays[key]()))
+    Object.keys(hc.holidays).forEach(key => createCard(key, hc.holidays[key].date(), hc.holidays[key].days()))
 })
